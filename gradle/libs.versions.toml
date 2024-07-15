@@ -1,0 +1,24 @@
+[versions]
+guava = "33.2.1-jre"
+logback = "1.5.6"
+
+dependency-management = "1.1.5"
+jgitver = "0.10.0-rc03"
+shadow = "8.1.1"
+sonarlint = "4.2.6"
+spotless = "6.25.0"
+spring-boot = "3.3.1"
+
+
+[plugins]
+dependency-management = { id = "io.spring.dependency-management", version.ref = "dependency-management" }
+jgitver = { id = "fr.brouillard.oss.gradle.jgitver", version.ref = "jgitver" }
+shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
+sonarlint = { id = "name.remal.sonarlint", version.ref = "sonarlint" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+
+
+[libraries]
+guava = { module = "com.google.guava:guava", version.ref = "guava" }
+logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
